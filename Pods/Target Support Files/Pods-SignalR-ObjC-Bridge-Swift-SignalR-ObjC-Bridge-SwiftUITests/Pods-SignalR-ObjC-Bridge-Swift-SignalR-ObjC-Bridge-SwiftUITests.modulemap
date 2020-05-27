@@ -1,0 +1,6 @@
+framework module Pods_SignalR_ObjC_Bridge_Swift_SignalR_ObjC_Bridge_SwiftUITests {
+  umbrella header "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module SwiftSignalRClient {
+  umbrella header "SwiftSignalRClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

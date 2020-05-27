@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SignalR_ObjC_Bridge_Swift_SignalR_ObjC_Bridge_SwiftUITests : NSObject
+@end
+@implementation PodsDummy_Pods_SignalR_ObjC_Bridge_Swift_SignalR_ObjC_Bridge_SwiftUITests
+@end

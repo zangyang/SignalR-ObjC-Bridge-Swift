@@ -1,0 +1,1074 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019D686F9BF6DD5B52E2937287F48815 /* HttpConnectionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E9E25794326F75022C414CF9F22B8 /* HttpConnectionOptions.swift */; };
+		0634B4051EA6456ED9D997F6FF247651 /* DefaultHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E628C152D29A6E4A15D84A234F741D8 /* DefaultHttpClient.swift */; };
+		0B9E85C37023DA972A3A0FAEA496B312 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB32DDFE8D81BEFCF33EEFB2B805BD2 /* Connection.swift */; };
+		0BF5B359ACB4D71660D92A681C7C4D34 /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0D4C248F5F445E678FBE65892C95C /* ConnectionDelegate.swift */; };
+		0F393D51B0D8486B5894223F07A05DB5 /* Pods-SignalR-ObjC-Bridge-SwiftTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C35C5CEE0EA663A2D75E9EEB46A66390 /* Pods-SignalR-ObjC-Bridge-SwiftTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26DA3F209F9409819C08855E3CAC8169 /* TransferFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2764F859F4C15E61DFA5ED6984B28472 /* TransferFormat.swift */; };
+		2791FBEED2F1E8322BCED36DF8B08145 /* HubConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B47B25E55728137A3018D89B1EC83 /* HubConnectionExtensions.swift */; };
+		2968A2222B81C07DFA35AC112E7CA071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2D97E18FDC3D142829C85E0FF877F49A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2F97F0E677A31E98EC9EB37C57360C16 /* SwiftSignalRClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E50FD246587F0AC84596E75631B3C70 /* SwiftSignalRClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30003BB4E2882D5B4DA7A4BF9DF20261 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACE52CDE72D13715B198F9B746CD01 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-dummy.m */; };
+		39CA209980013A668C15274B3BC763A8 /* CodableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998BAD8185BADD9ED64EEA86CF777BA /* CodableHelpers.swift */; };
+		3D68F3403B3EDD97F0F98F679F420AAB /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935148BAEA34D3875EE7F1FCF52E436 /* WebSocket.swift */; };
+		3DFB44BCE560AFC967654442B907C8AB /* StreamHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841F2CE57E7B7B4EEDAFFF3A6A43BB5 /* StreamHandle.swift */; };
+		42A1B2AF718396E553C68B2BDDC0D98B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04252601ED79704A272361FED0C5B59 /* Util.swift */; };
+		42C35129CE09E96FE05A816B056E53DF /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F55C50B2A89AA954F1EC498AC0B64 /* HttpResponse.swift */; };
+		4A7B2413EA7217261178EA913802C36B /* Pods-SignalR-ObjC-Bridge-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F968523AAF912DF5ABB594C37F42A43D /* Pods-SignalR-ObjC-Bridge-Swift-dummy.m */; };
+		5BEC1DCE3CCE6664BCB6A78735AA55EF /* JSONHubProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E08E657169A463563A51B19076A8C47 /* JSONHubProtocol.swift */; };
+		61D33EB7F16AD9608A4A184B2B9FE27F /* HubConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3098D9A7E11F6992114F5FE964CBA2F3 /* HubConnectionDelegate.swift */; };
+		674FC51EEC92422C65507E05C03B8F28 /* TransportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED4723B104749ED6848F94F57A1757 /* TransportDelegate.swift */; };
+		6AE0273504EDA79C920C707727429A98 /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AD8E434E0BC647E516577024A4FD2C /* TransportType.swift */; };
+		70D29008F191AF2A93A4ACE1CF10197F /* DefaultTransportFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A8301AA737E28BACB89489B64F09C /* DefaultTransportFactory.swift */; };
+		72E9A8260C25016D111782EC4C736671 /* ServerInvocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F92134FAD5E741325A596AE66106D8 /* ServerInvocationHandler.swift */; };
+		82856910714CAEB25E21517A9029CF6B /* HubProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5816D4FD44977850AAA530F9E35541 /* HubProtocol.swift */; };
+		8F421D84048A105419F826205E053F8A /* SwiftSignalRClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D62F9944E7EF1FE49B78207850C9B7 /* SwiftSignalRClient-dummy.m */; };
+		91218D1D6D91B8B4ADB59D3E764162CD /* HubConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094BAC52780DA77EDCE9DC8B5E07DD4C /* HubConnection.swift */; };
+		939E3563C154CFCA1DC67C100C224B58 /* WebsocketsTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708684C7BF4562704FDC47C184193798 /* WebsocketsTransport.swift */; };
+		99FACCD133829C99BBB09297D76E1CA7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6392458B0CA1B6ABF6A65C7E83925E /* Logger.swift */; };
+		9FE240FA0D125D50FEFB5045621A725E /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DEB5D75C2B084FC80F2808C60F4DBF /* HttpConnection.swift */; };
+		AF1B4435D647EA1C5508814FD8EA4505 /* HubConnectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD635D5FBB125F0CA2190D6FB6CD93D8 /* HubConnectionBuilder.swift */; };
+		B063902D926CDAEA230F45CFEB6BB497 /* Pods-SignalR-ObjC-Bridge-SwiftTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF531846A5979B1417504E8C74F94CB8 /* Pods-SignalR-ObjC-Bridge-SwiftTests-dummy.m */; };
+		C2EFA9B6D710FAF18322EF59F7A29BA4 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 857045907469E06B70EB50D96D6C112F /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7EAF93C0BB493C0AD4B434665FC6112 /* Pods-SignalR-ObjC-Bridge-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9634B90DA737AA6C2E6882A18C0E5F2 /* Pods-SignalR-ObjC-Bridge-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C858F723042BD161DB2149FD3641E05D /* HandshakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5809AA0582F4222873CF464B1196AC /* HandshakeProtocol.swift */; };
+		CA4F63A23894B041F6FC2F1083ED8889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D84568B64C31DDFCD6EAECD351820DF9 /* NegotiationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202059882CDE4E14D7E97DE9AD7B5E93 /* NegotiationResponse.swift */; };
+		DDE447A8AF30022C751E951CEFD5FCE5 /* SignalRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E28A336C25DA7C26E9F2FFB8FEDF5 /* SignalRError.swift */; };
+		EA1BC33B453AC80B9D77BD15D66BDAD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EA77A6EB97D302E191D3CE2111774FC6 /* HttpClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CDE664DE67C2575FD15F1EC717155D /* HttpClientProtocol.swift */; };
+		F3EC7314884F23C1769C8840F9F2A6A8 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC346235C3B1C3BF82FC4D16467F15 /* Transport.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1206C223752AD220FF54EBC0F49985C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70018130D2F6BA4895F572DAC2308A0;
+			remoteInfo = SwiftSignalRClient;
+		};
+		2579658BA17DB4FCDB8A7D850AA594FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70018130D2F6BA4895F572DAC2308A0;
+			remoteInfo = SwiftSignalRClient;
+		};
+		EFEEA85CD4F942EAFE2D1DF7B92B28B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4855734C5B55987B0566BA0167CA959F;
+			remoteInfo = "Pods-SignalR-ObjC-Bridge-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06D520E4F5F5A3D992007CDBB1199215 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		094BAC52780DA77EDCE9DC8B5E07DD4C /* HubConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnection.swift; path = Sources/SignalRClient/HubConnection.swift; sourceTree = "<group>"; };
+		0A5AF396DE204924387E08312AD98ABC /* Pods-SignalR-ObjC-Bridge-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalR-ObjC-Bridge-Swift-Info.plist"; sourceTree = "<group>"; };
+		0FF8499C5510EB46A4BAE059E1178385 /* Pods-SignalR-ObjC-Bridge-SwiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SignalR-ObjC-Bridge-SwiftTests.modulemap"; sourceTree = "<group>"; };
+		16AD8E434E0BC647E516577024A4FD2C /* TransportType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransportType.swift; path = Sources/SignalRClient/TransportType.swift; sourceTree = "<group>"; };
+		1AB32DDFE8D81BEFCF33EEFB2B805BD2 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SignalRClient/Connection.swift; sourceTree = "<group>"; };
+		1D5816D4FD44977850AAA530F9E35541 /* HubProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubProtocol.swift; path = Sources/SignalRClient/HubProtocol.swift; sourceTree = "<group>"; };
+		1D9B47B25E55728137A3018D89B1EC83 /* HubConnectionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionExtensions.swift; path = Sources/SignalRClient/HubConnectionExtensions.swift; sourceTree = "<group>"; };
+		1F1F7F4D05BFD0FFAB7FE70DF7C383C4 /* SwiftSignalRClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSignalRClient-prefix.pch"; sourceTree = "<group>"; };
+		202059882CDE4E14D7E97DE9AD7B5E93 /* NegotiationResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NegotiationResponse.swift; path = Sources/SignalRClient/NegotiationResponse.swift; sourceTree = "<group>"; };
+		2764F859F4C15E61DFA5ED6984B28472 /* TransferFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransferFormat.swift; path = Sources/SignalRClient/TransferFormat.swift; sourceTree = "<group>"; };
+		2A7AB95351A4F6415DF3E655651DCA2C /* Pods-SignalR-ObjC-Bridge-Swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SignalR-ObjC-Bridge-Swift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B5A94E9C397EF62D1070B39B3DBCFE4 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2E50FD246587F0AC84596E75631B3C70 /* SwiftSignalRClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSignalRClient-umbrella.h"; sourceTree = "<group>"; };
+		3098D9A7E11F6992114F5FE964CBA2F3 /* HubConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionDelegate.swift; path = Sources/SignalRClient/HubConnectionDelegate.swift; sourceTree = "<group>"; };
+		312F4D2CD8BE473604B48B4C758F78D8 /* SwiftSignalRClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSignalRClient.modulemap; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3388AC590C4E9B6B0265BE4C00606529 /* Pods-SignalR-ObjC-Bridge-Swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SignalR-ObjC-Bridge-Swift-frameworks.sh"; sourceTree = "<group>"; };
+		36BCC6A2099379B0D69E36B63BC6A938 /* Pods-SignalR-ObjC-Bridge-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalR-ObjC-Bridge-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		3AEC346235C3B1C3BF82FC4D16467F15 /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/SignalRClient/Transport.swift; sourceTree = "<group>"; };
+		3C5C2AFE8CB34DCD713F840F1E6EE790 /* Pods-SignalR-ObjC-Bridge-Swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalR-ObjC-Bridge-Swift-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E08E657169A463563A51B19076A8C47 /* JSONHubProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONHubProtocol.swift; path = Sources/SignalRClient/JSONHubProtocol.swift; sourceTree = "<group>"; };
+		439E9E25794326F75022C414CF9F22B8 /* HttpConnectionOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnectionOptions.swift; path = Sources/SignalRClient/HttpConnectionOptions.swift; sourceTree = "<group>"; };
+		48725832949E31168834DE2381040E9A /* Pods_SignalR_ObjC_Bridge_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SignalR_ObjC_Bridge_SwiftTests.framework; path = "Pods-SignalR-ObjC-Bridge-SwiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6D6F476015F612312E84C1D1D39A87 /* Pods-SignalR-ObjC-Bridge-SwiftTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SignalR-ObjC-Bridge-SwiftTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A9F55C50B2A89AA954F1EC498AC0B64 /* HttpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = Sources/SignalRClient/HttpResponse.swift; sourceTree = "<group>"; };
+		5EACE52CDE72D13715B198F9B746CD01 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-dummy.m"; sourceTree = "<group>"; };
+		65F3A64A6CA09D0606135DCB178C57B9 /* Pods-SignalR-ObjC-Bridge-SwiftTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalR-ObjC-Bridge-SwiftTests-Info.plist"; sourceTree = "<group>"; };
+		6F3D78DE1DC5E5EB48523B928A2982E4 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		708684C7BF4562704FDC47C184193798 /* WebsocketsTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebsocketsTransport.swift; path = Sources/SignalRClient/WebsocketsTransport.swift; sourceTree = "<group>"; };
+		82D02A91AD70A3F3965A82349BA9D2EE /* SwiftSignalRClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSignalRClient.xcconfig; sourceTree = "<group>"; };
+		857045907469E06B70EB50D96D6C112F /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-umbrella.h"; sourceTree = "<group>"; };
+		86DEB5D75C2B084FC80F2808C60F4DBF /* HttpConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnection.swift; path = Sources/SignalRClient/HttpConnection.swift; sourceTree = "<group>"; };
+		8841F2CE57E7B7B4EEDAFFF3A6A43BB5 /* StreamHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamHandle.swift; path = Sources/SignalRClient/StreamHandle.swift; sourceTree = "<group>"; };
+		8A6B87E9D51F8751DA5FA2AE5EF5CEB1 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.modulemap"; sourceTree = "<group>"; };
+		93ED4723B104749ED6848F94F57A1757 /* TransportDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransportDelegate.swift; path = Sources/SignalRClient/TransportDelegate.swift; sourceTree = "<group>"; };
+		95D0D4C248F5F445E678FBE65892C95C /* ConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionDelegate.swift; path = Sources/SignalRClient/ConnectionDelegate.swift; sourceTree = "<group>"; };
+		96A314D88B5D96D15774B238C3B88D6E /* Pods-SignalR-ObjC-Bridge-SwiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalR-ObjC-Bridge-SwiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B6392458B0CA1B6ABF6A65C7E83925E /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Sources/SignalRClient/Logger.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E628C152D29A6E4A15D84A234F741D8 /* DefaultHttpClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultHttpClient.swift; path = Sources/SignalRClient/DefaultHttpClient.swift; sourceTree = "<group>"; };
+		9EE84F3BFDA81D87DCC7B4DE166CE0D6 /* SwiftSignalRClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSignalRClient-Info.plist"; sourceTree = "<group>"; };
+		A1F92134FAD5E741325A596AE66106D8 /* ServerInvocationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerInvocationHandler.swift; path = Sources/SignalRClient/ServerInvocationHandler.swift; sourceTree = "<group>"; };
+		A887D0E03A922A5553953075A30C7C11 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-Info.plist"; sourceTree = "<group>"; };
+		AF531846A5979B1417504E8C74F94CB8 /* Pods-SignalR-ObjC-Bridge-SwiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SignalR-ObjC-Bridge-SwiftTests-dummy.m"; sourceTree = "<group>"; };
+		B94A4C3982E2CDE8A3A09C7EDBDD75F0 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C20FC9BB17AD95FB0BD2FB5B26D663A8 /* Pods-SignalR-ObjC-Bridge-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalR-ObjC-Bridge-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C35C5CEE0EA663A2D75E9EEB46A66390 /* Pods-SignalR-ObjC-Bridge-SwiftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SignalR-ObjC-Bridge-SwiftTests-umbrella.h"; sourceTree = "<group>"; };
+		C56E2653417813EF00C7A2BE1858D527 /* Pods_SignalR_ObjC_Bridge_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SignalR_ObjC_Bridge_Swift.framework; path = "Pods-SignalR-ObjC-Bridge-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9515A4A95E83FE186E13BDF959AF5DE /* Pods-SignalR-ObjC-Bridge-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SignalR-ObjC-Bridge-Swift.modulemap"; sourceTree = "<group>"; };
+		C9634B90DA737AA6C2E6882A18C0E5F2 /* Pods-SignalR-ObjC-Bridge-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SignalR-ObjC-Bridge-Swift-umbrella.h"; sourceTree = "<group>"; };
+		CB5809AA0582F4222873CF464B1196AC /* HandshakeProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HandshakeProtocol.swift; path = Sources/SignalRClient/HandshakeProtocol.swift; sourceTree = "<group>"; };
+		CD32AD509561825D6A78B78DE469EA9C /* Pods_SignalR_ObjC_Bridge_Swift_SignalR_ObjC_Bridge_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SignalR_ObjC_Bridge_Swift_SignalR_ObjC_Bridge_SwiftUITests.framework; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16E28A336C25DA7C26E9F2FFB8FEDF5 /* SignalRError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalRError.swift; path = Sources/SignalRClient/SignalRError.swift; sourceTree = "<group>"; };
+		D3CDE664DE67C2575FD15F1EC717155D /* HttpClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpClientProtocol.swift; path = Sources/SignalRClient/HttpClientProtocol.swift; sourceTree = "<group>"; };
+		D6F5A9541ACB06DB7040B053C1FB17BB /* Pods-SignalR-ObjC-Bridge-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalR-ObjC-Bridge-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		D7D62F9944E7EF1FE49B78207850C9B7 /* SwiftSignalRClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSignalRClient-dummy.m"; sourceTree = "<group>"; };
+		D998BAD8185BADD9ED64EEA86CF777BA /* CodableHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableHelpers.swift; path = Sources/SignalRClient/CodableHelpers.swift; sourceTree = "<group>"; };
+		E04252601ED79704A272361FED0C5B59 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Sources/SignalRClient/Util.swift; sourceTree = "<group>"; };
+		E051CE1A04AE39BEB1EF729EC62A1B11 /* Pods-SignalR-ObjC-Bridge-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalR-ObjC-Bridge-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		E7AFB048F72A32D1AB967A9164E20741 /* SwiftSignalRClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSignalRClient.framework; path = SwiftSignalRClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5A8301AA737E28BACB89489B64F09C /* DefaultTransportFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultTransportFactory.swift; path = Sources/SignalRClient/DefaultTransportFactory.swift; sourceTree = "<group>"; };
+		F3E0D0B329D39F8112BFE10809F015DD /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F935148BAEA34D3875EE7F1FCF52E436 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/SignalRClient/WebSocket.swift; sourceTree = "<group>"; };
+		F968523AAF912DF5ABB594C37F42A43D /* Pods-SignalR-ObjC-Bridge-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SignalR-ObjC-Bridge-Swift-dummy.m"; sourceTree = "<group>"; };
+		FD635D5FBB125F0CA2190D6FB6CD93D8 /* HubConnectionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HubConnectionBuilder.swift; path = Sources/SignalRClient/HubConnectionBuilder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D0E0CBED092D96F5E6A2A5D0C73211C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4F63A23894B041F6FC2F1083ED8889 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473B6E26DE4E1CA22DDD2229F088EDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D97E18FDC3D142829C85E0FF877F49A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C2502502583AE370E0C55545A803BC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2968A2222B81C07DFA35AC112E7CA071 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881885DF58DEFCEA80247795A3DAD405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1BC33B453AC80B9D77BD15D66BDAD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30B856971B60AAC6D65E80F42B6A0AD3 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B87E9D51F8751DA5FA2AE5EF5CEB1 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.modulemap */,
+				F3E0D0B329D39F8112BFE10809F015DD /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-acknowledgements.markdown */,
+				B94A4C3982E2CDE8A3A09C7EDBDD75F0 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-acknowledgements.plist */,
+				5EACE52CDE72D13715B198F9B746CD01 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-dummy.m */,
+				2B5A94E9C397EF62D1070B39B3DBCFE4 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-frameworks.sh */,
+				A887D0E03A922A5553953075A30C7C11 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-Info.plist */,
+				857045907469E06B70EB50D96D6C112F /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-umbrella.h */,
+				06D520E4F5F5A3D992007CDBB1199215 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.debug.xcconfig */,
+				6F3D78DE1DC5E5EB48523B928A2982E4 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.release.xcconfig */,
+			);
+			name = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests";
+			path = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		6F59742EBC36EC662810289789614120 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C56E2653417813EF00C7A2BE1858D527 /* Pods_SignalR_ObjC_Bridge_Swift.framework */,
+				CD32AD509561825D6A78B78DE469EA9C /* Pods_SignalR_ObjC_Bridge_Swift_SignalR_ObjC_Bridge_SwiftUITests.framework */,
+				48725832949E31168834DE2381040E9A /* Pods_SignalR_ObjC_Bridge_SwiftTests.framework */,
+				E7AFB048F72A32D1AB967A9164E20741 /* SwiftSignalRClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72762B69F7D7BFD0D63BCC77CBDD5380 /* Pods-SignalR-ObjC-Bridge-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C9515A4A95E83FE186E13BDF959AF5DE /* Pods-SignalR-ObjC-Bridge-Swift.modulemap */,
+				2A7AB95351A4F6415DF3E655651DCA2C /* Pods-SignalR-ObjC-Bridge-Swift-acknowledgements.markdown */,
+				3C5C2AFE8CB34DCD713F840F1E6EE790 /* Pods-SignalR-ObjC-Bridge-Swift-acknowledgements.plist */,
+				F968523AAF912DF5ABB594C37F42A43D /* Pods-SignalR-ObjC-Bridge-Swift-dummy.m */,
+				3388AC590C4E9B6B0265BE4C00606529 /* Pods-SignalR-ObjC-Bridge-Swift-frameworks.sh */,
+				0A5AF396DE204924387E08312AD98ABC /* Pods-SignalR-ObjC-Bridge-Swift-Info.plist */,
+				C9634B90DA737AA6C2E6882A18C0E5F2 /* Pods-SignalR-ObjC-Bridge-Swift-umbrella.h */,
+				E051CE1A04AE39BEB1EF729EC62A1B11 /* Pods-SignalR-ObjC-Bridge-Swift.debug.xcconfig */,
+				36BCC6A2099379B0D69E36B63BC6A938 /* Pods-SignalR-ObjC-Bridge-Swift.release.xcconfig */,
+			);
+			name = "Pods-SignalR-ObjC-Bridge-Swift";
+			path = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift";
+			sourceTree = "<group>";
+		};
+		73B448CCAFDA14F40B361ACC95333799 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFEBEB1DFEBDDBAF17E7A2F615E4F5FB /* SwiftSignalRClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEA881063878AD12835EA751C46BB1DB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				312F4D2CD8BE473604B48B4C758F78D8 /* SwiftSignalRClient.modulemap */,
+				82D02A91AD70A3F3965A82349BA9D2EE /* SwiftSignalRClient.xcconfig */,
+				D7D62F9944E7EF1FE49B78207850C9B7 /* SwiftSignalRClient-dummy.m */,
+				9EE84F3BFDA81D87DCC7B4DE166CE0D6 /* SwiftSignalRClient-Info.plist */,
+				1F1F7F4D05BFD0FFAB7FE70DF7C383C4 /* SwiftSignalRClient-prefix.pch */,
+				2E50FD246587F0AC84596E75631B3C70 /* SwiftSignalRClient-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSignalRClient";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				73B448CCAFDA14F40B361ACC95333799 /* Pods */,
+				6F59742EBC36EC662810289789614120 /* Products */,
+				FB046EF4FF2FD7C65AB501201BC86639 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFEBEB1DFEBDDBAF17E7A2F615E4F5FB /* SwiftSignalRClient */ = {
+			isa = PBXGroup;
+			children = (
+				D998BAD8185BADD9ED64EEA86CF777BA /* CodableHelpers.swift */,
+				1AB32DDFE8D81BEFCF33EEFB2B805BD2 /* Connection.swift */,
+				95D0D4C248F5F445E678FBE65892C95C /* ConnectionDelegate.swift */,
+				9E628C152D29A6E4A15D84A234F741D8 /* DefaultHttpClient.swift */,
+				EF5A8301AA737E28BACB89489B64F09C /* DefaultTransportFactory.swift */,
+				CB5809AA0582F4222873CF464B1196AC /* HandshakeProtocol.swift */,
+				D3CDE664DE67C2575FD15F1EC717155D /* HttpClientProtocol.swift */,
+				86DEB5D75C2B084FC80F2808C60F4DBF /* HttpConnection.swift */,
+				439E9E25794326F75022C414CF9F22B8 /* HttpConnectionOptions.swift */,
+				5A9F55C50B2A89AA954F1EC498AC0B64 /* HttpResponse.swift */,
+				094BAC52780DA77EDCE9DC8B5E07DD4C /* HubConnection.swift */,
+				FD635D5FBB125F0CA2190D6FB6CD93D8 /* HubConnectionBuilder.swift */,
+				3098D9A7E11F6992114F5FE964CBA2F3 /* HubConnectionDelegate.swift */,
+				1D9B47B25E55728137A3018D89B1EC83 /* HubConnectionExtensions.swift */,
+				1D5816D4FD44977850AAA530F9E35541 /* HubProtocol.swift */,
+				3E08E657169A463563A51B19076A8C47 /* JSONHubProtocol.swift */,
+				9B6392458B0CA1B6ABF6A65C7E83925E /* Logger.swift */,
+				202059882CDE4E14D7E97DE9AD7B5E93 /* NegotiationResponse.swift */,
+				A1F92134FAD5E741325A596AE66106D8 /* ServerInvocationHandler.swift */,
+				D16E28A336C25DA7C26E9F2FFB8FEDF5 /* SignalRError.swift */,
+				8841F2CE57E7B7B4EEDAFFF3A6A43BB5 /* StreamHandle.swift */,
+				2764F859F4C15E61DFA5ED6984B28472 /* TransferFormat.swift */,
+				3AEC346235C3B1C3BF82FC4D16467F15 /* Transport.swift */,
+				93ED4723B104749ED6848F94F57A1757 /* TransportDelegate.swift */,
+				16AD8E434E0BC647E516577024A4FD2C /* TransportType.swift */,
+				E04252601ED79704A272361FED0C5B59 /* Util.swift */,
+				F935148BAEA34D3875EE7F1FCF52E436 /* WebSocket.swift */,
+				708684C7BF4562704FDC47C184193798 /* WebsocketsTransport.swift */,
+				AEA881063878AD12835EA751C46BB1DB /* Support Files */,
+			);
+			name = SwiftSignalRClient;
+			path = SwiftSignalRClient;
+			sourceTree = "<group>";
+		};
+		D1EBFED98A44265369BA4672C8412E47 /* Pods-SignalR-ObjC-Bridge-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FF8499C5510EB46A4BAE059E1178385 /* Pods-SignalR-ObjC-Bridge-SwiftTests.modulemap */,
+				4D6D6F476015F612312E84C1D1D39A87 /* Pods-SignalR-ObjC-Bridge-SwiftTests-acknowledgements.markdown */,
+				96A314D88B5D96D15774B238C3B88D6E /* Pods-SignalR-ObjC-Bridge-SwiftTests-acknowledgements.plist */,
+				AF531846A5979B1417504E8C74F94CB8 /* Pods-SignalR-ObjC-Bridge-SwiftTests-dummy.m */,
+				65F3A64A6CA09D0606135DCB178C57B9 /* Pods-SignalR-ObjC-Bridge-SwiftTests-Info.plist */,
+				C35C5CEE0EA663A2D75E9EEB46A66390 /* Pods-SignalR-ObjC-Bridge-SwiftTests-umbrella.h */,
+				C20FC9BB17AD95FB0BD2FB5B26D663A8 /* Pods-SignalR-ObjC-Bridge-SwiftTests.debug.xcconfig */,
+				D6F5A9541ACB06DB7040B053C1FB17BB /* Pods-SignalR-ObjC-Bridge-SwiftTests.release.xcconfig */,
+			);
+			name = "Pods-SignalR-ObjC-Bridge-SwiftTests";
+			path = "Target Support Files/Pods-SignalR-ObjC-Bridge-SwiftTests";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB046EF4FF2FD7C65AB501201BC86639 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72762B69F7D7BFD0D63BCC77CBDD5380 /* Pods-SignalR-ObjC-Bridge-Swift */,
+				30B856971B60AAC6D65E80F42B6A0AD3 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests */,
+				D1EBFED98A44265369BA4672C8412E47 /* Pods-SignalR-ObjC-Bridge-SwiftTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		688ECBC19356BA6D6482D68656E00584 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EAF93C0BB493C0AD4B434665FC6112 /* Pods-SignalR-ObjC-Bridge-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F012BF44AD778753BB832B1A3AD220D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F97F0E677A31E98EC9EB37C57360C16 /* SwiftSignalRClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		878FCBA8DD41B4A6C315FF304FE27ADE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F393D51B0D8486B5894223F07A05DB5 /* Pods-SignalR-ObjC-Bridge-SwiftTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B1A8486C3F86FA249821CD67671AB4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2EFA9B6D710FAF18322EF59F7A29BA4 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4855734C5B55987B0566BA0167CA959F /* Pods-SignalR-ObjC-Bridge-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9047FA3DD9E3BE609DCF2584DD8D712D /* Build configuration list for PBXNativeTarget "Pods-SignalR-ObjC-Bridge-Swift" */;
+			buildPhases = (
+				688ECBC19356BA6D6482D68656E00584 /* Headers */,
+				F59B87D535DB76638CE0562E3E3F094F /* Sources */,
+				473B6E26DE4E1CA22DDD2229F088EDB9 /* Frameworks */,
+				60EFD64759380C50981E820272536BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				202D2B824C6C2BD146E5B53DCB5FAA8D /* PBXTargetDependency */,
+			);
+			name = "Pods-SignalR-ObjC-Bridge-Swift";
+			productName = "Pods-SignalR-ObjC-Bridge-Swift";
+			productReference = C56E2653417813EF00C7A2BE1858D527 /* Pods_SignalR_ObjC_Bridge_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8129BD71AD78CBBE5E35F069932E5A52 /* Pods-SignalR-ObjC-Bridge-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69774461F58051D25F119232113B2C60 /* Build configuration list for PBXNativeTarget "Pods-SignalR-ObjC-Bridge-SwiftTests" */;
+			buildPhases = (
+				878FCBA8DD41B4A6C315FF304FE27ADE /* Headers */,
+				DCF0D13E1ABD04042554806BC7D02CBB /* Sources */,
+				2D0E0CBED092D96F5E6A2A5D0C73211C /* Frameworks */,
+				7EAB02E01BD3E47B309ABBEF57F372CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				894CE24E93730269B3693302C7BD6AC5 /* PBXTargetDependency */,
+			);
+			name = "Pods-SignalR-ObjC-Bridge-SwiftTests";
+			productName = "Pods-SignalR-ObjC-Bridge-SwiftTests";
+			productReference = 48725832949E31168834DE2381040E9A /* Pods_SignalR_ObjC_Bridge_SwiftTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40B324E22E4535A5FFD71496F72E9BD0 /* Build configuration list for PBXNativeTarget "SwiftSignalRClient" */;
+			buildPhases = (
+				7F012BF44AD778753BB832B1A3AD220D /* Headers */,
+				02D5410340F02AFF8F647F3860C48FF9 /* Sources */,
+				881885DF58DEFCEA80247795A3DAD405 /* Frameworks */,
+				BEAD772E71FB239BD06B09B7BD9B77BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSignalRClient;
+			productName = SwiftSignalRClient;
+			productReference = E7AFB048F72A32D1AB967A9164E20741 /* SwiftSignalRClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2ED113DCA18D63EEA5FD8EFE0288A21 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5384AB1196704C6E7B1742D94BB2CAE0 /* Build configuration list for PBXNativeTarget "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests" */;
+			buildPhases = (
+				A7B1A8486C3F86FA249821CD67671AB4 /* Headers */,
+				196778AD826B34212E22EAC6AC0C1A8F /* Sources */,
+				7C2502502583AE370E0C55545A803BC9 /* Frameworks */,
+				F690FB64776510C2AC866C731F74882D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54394BFD423F7EA9CDC1383C6E4F8B68 /* PBXTargetDependency */,
+			);
+			name = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests";
+			productName = "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests";
+			productReference = CD32AD509561825D6A78B78DE469EA9C /* Pods_SignalR_ObjC_Bridge_Swift_SignalR_ObjC_Bridge_SwiftUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6F59742EBC36EC662810289789614120 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4855734C5B55987B0566BA0167CA959F /* Pods-SignalR-ObjC-Bridge-Swift */,
+				F2ED113DCA18D63EEA5FD8EFE0288A21 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests */,
+				8129BD71AD78CBBE5E35F069932E5A52 /* Pods-SignalR-ObjC-Bridge-SwiftTests */,
+				C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60EFD64759380C50981E820272536BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAB02E01BD3E47B309ABBEF57F372CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAD772E71FB239BD06B09B7BD9B77BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F690FB64776510C2AC866C731F74882D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02D5410340F02AFF8F647F3860C48FF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39CA209980013A668C15274B3BC763A8 /* CodableHelpers.swift in Sources */,
+				0B9E85C37023DA972A3A0FAEA496B312 /* Connection.swift in Sources */,
+				0BF5B359ACB4D71660D92A681C7C4D34 /* ConnectionDelegate.swift in Sources */,
+				0634B4051EA6456ED9D997F6FF247651 /* DefaultHttpClient.swift in Sources */,
+				70D29008F191AF2A93A4ACE1CF10197F /* DefaultTransportFactory.swift in Sources */,
+				C858F723042BD161DB2149FD3641E05D /* HandshakeProtocol.swift in Sources */,
+				EA77A6EB97D302E191D3CE2111774FC6 /* HttpClientProtocol.swift in Sources */,
+				9FE240FA0D125D50FEFB5045621A725E /* HttpConnection.swift in Sources */,
+				019D686F9BF6DD5B52E2937287F48815 /* HttpConnectionOptions.swift in Sources */,
+				42C35129CE09E96FE05A816B056E53DF /* HttpResponse.swift in Sources */,
+				91218D1D6D91B8B4ADB59D3E764162CD /* HubConnection.swift in Sources */,
+				AF1B4435D647EA1C5508814FD8EA4505 /* HubConnectionBuilder.swift in Sources */,
+				61D33EB7F16AD9608A4A184B2B9FE27F /* HubConnectionDelegate.swift in Sources */,
+				2791FBEED2F1E8322BCED36DF8B08145 /* HubConnectionExtensions.swift in Sources */,
+				82856910714CAEB25E21517A9029CF6B /* HubProtocol.swift in Sources */,
+				5BEC1DCE3CCE6664BCB6A78735AA55EF /* JSONHubProtocol.swift in Sources */,
+				99FACCD133829C99BBB09297D76E1CA7 /* Logger.swift in Sources */,
+				D84568B64C31DDFCD6EAECD351820DF9 /* NegotiationResponse.swift in Sources */,
+				72E9A8260C25016D111782EC4C736671 /* ServerInvocationHandler.swift in Sources */,
+				DDE447A8AF30022C751E951CEFD5FCE5 /* SignalRError.swift in Sources */,
+				3DFB44BCE560AFC967654442B907C8AB /* StreamHandle.swift in Sources */,
+				8F421D84048A105419F826205E053F8A /* SwiftSignalRClient-dummy.m in Sources */,
+				26DA3F209F9409819C08855E3CAC8169 /* TransferFormat.swift in Sources */,
+				F3EC7314884F23C1769C8840F9F2A6A8 /* Transport.swift in Sources */,
+				674FC51EEC92422C65507E05C03B8F28 /* TransportDelegate.swift in Sources */,
+				6AE0273504EDA79C920C707727429A98 /* TransportType.swift in Sources */,
+				42A1B2AF718396E553C68B2BDDC0D98B /* Util.swift in Sources */,
+				3D68F3403B3EDD97F0F98F679F420AAB /* WebSocket.swift in Sources */,
+				939E3563C154CFCA1DC67C100C224B58 /* WebsocketsTransport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196778AD826B34212E22EAC6AC0C1A8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30003BB4E2882D5B4DA7A4BF9DF20261 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF0D13E1ABD04042554806BC7D02CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B063902D926CDAEA230F45CFEB6BB497 /* Pods-SignalR-ObjC-Bridge-SwiftTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59B87D535DB76638CE0562E3E3F094F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7B2413EA7217261178EA913802C36B /* Pods-SignalR-ObjC-Bridge-Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		202D2B824C6C2BD146E5B53DCB5FAA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSignalRClient;
+			target = C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */;
+			targetProxy = 2579658BA17DB4FCDB8A7D850AA594FF /* PBXContainerItemProxy */;
+		};
+		54394BFD423F7EA9CDC1383C6E4F8B68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSignalRClient;
+			target = C70018130D2F6BA4895F572DAC2308A0 /* SwiftSignalRClient */;
+			targetProxy = 1206C223752AD220FF54EBC0F49985C6 /* PBXContainerItemProxy */;
+		};
+		894CE24E93730269B3693302C7BD6AC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SignalR-ObjC-Bridge-Swift";
+			target = 4855734C5B55987B0566BA0167CA959F /* Pods-SignalR-ObjC-Bridge-Swift */;
+			targetProxy = EFEEA85CD4F942EAFE2D1DF7B92B28B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B4ECA7743CBC3DA0163E5000B80411F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36BCC6A2099379B0D69E36B63BC6A938 /* Pods-SignalR-ObjC-Bridge-Swift.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift/Pods-SignalR-ObjC-Bridge-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift/Pods-SignalR-ObjC-Bridge-Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		35E29D1ECD731FC2385C06EFE086AF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F3D78DE1DC5E5EB48523B928A2982E4 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests/Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests/Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CBDB8B8DDEE1D09514A9D34CDFC3431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F5A9541ACB06DB7040B053C1FB17BB /* Pods-SignalR-ObjC-Bridge-SwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-SwiftTests/Pods-SignalR-ObjC-Bridge-SwiftTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-SwiftTests/Pods-SignalR-ObjC-Bridge-SwiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		642A7686D1C4B9A265D7AED3F676985B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D02A91AD70A3F3965A82349BA9D2EE /* SwiftSignalRClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSignalRClient;
+				PRODUCT_NAME = SwiftSignalRClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6FF67FB7AE09FE47CA675070A07377CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D520E4F5F5A3D992007CDBB1199215 /* Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests/Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests/Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7865849CB9BC6DD656627468E9412F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E051CE1A04AE39BEB1EF729EC62A1B11 /* Pods-SignalR-ObjC-Bridge-Swift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift/Pods-SignalR-ObjC-Bridge-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-Swift/Pods-SignalR-ObjC-Bridge-Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A33C6A5D777CF70487E3AC1C4BB17A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20FC9BB17AD95FB0BD2FB5B26D663A8 /* Pods-SignalR-ObjC-Bridge-SwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-SwiftTests/Pods-SignalR-ObjC-Bridge-SwiftTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SignalR-ObjC-Bridge-SwiftTests/Pods-SignalR-ObjC-Bridge-SwiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE1E39AAC94218975ABBA331451A792E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D02A91AD70A3F3965A82349BA9D2EE /* SwiftSignalRClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSignalRClient/SwiftSignalRClient.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSignalRClient;
+				PRODUCT_NAME = SwiftSignalRClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40B324E22E4535A5FFD71496F72E9BD0 /* Build configuration list for PBXNativeTarget "SwiftSignalRClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642A7686D1C4B9A265D7AED3F676985B /* Debug */,
+				AE1E39AAC94218975ABBA331451A792E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5384AB1196704C6E7B1742D94BB2CAE0 /* Build configuration list for PBXNativeTarget "Pods-SignalR-ObjC-Bridge-Swift-SignalR-ObjC-Bridge-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF67FB7AE09FE47CA675070A07377CA /* Debug */,
+				35E29D1ECD731FC2385C06EFE086AF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69774461F58051D25F119232113B2C60 /* Build configuration list for PBXNativeTarget "Pods-SignalR-ObjC-Bridge-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33C6A5D777CF70487E3AC1C4BB17A28 /* Debug */,
+				3CBDB8B8DDEE1D09514A9D34CDFC3431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9047FA3DD9E3BE609DCF2584DD8D712D /* Build configuration list for PBXNativeTarget "Pods-SignalR-ObjC-Bridge-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7865849CB9BC6DD656627468E9412F09 /* Debug */,
+				0B4ECA7743CBC3DA0163E5000B80411F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
