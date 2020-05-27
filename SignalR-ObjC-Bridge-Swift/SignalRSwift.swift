@@ -20,12 +20,19 @@ typealias funcBlock = (String) -> ()
     private var name = ""
     private var messages: [String] = []
     
-    @objc public func signalROpen(url:String,hubName:String,blockfunc:funcBlock!){
+    @objc public func signalROpen(url:String,headers: [String: String]?,hubName:String,blockfunc:funcBlock!){
         name=hubName
         self.chatHubConnectionDelegate = ChatHubConnectionDelegate(signalrswift: self)
         self.chatHubConnection = HubConnectionBuilder(url: URL(string: url)!)
             .withLogging(minLogLevel: .debug)
             .withHubConnectionDelegate(delegate: self.chatHubConnectionDelegate!)
+            .withHttpConnectionOptions(configureHttpOptions: { (httpConnectionOptions) in
+                if let header = headers {
+                    for (key, value) in header {
+                        httpConnectionOptions.headers[key] = value
+                    }
+                }
+            })
             .build()
         
         self.chatHubConnection!.on(method: "Message", callback: {(message: String) in

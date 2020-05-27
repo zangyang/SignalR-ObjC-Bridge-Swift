@@ -32,11 +32,13 @@
     //打开signalR
     signalrSwift=[[SignalRSwift alloc]init];
     NSString *signalRString =@"http://localhost/signalr";
+    NSDictionary *headers = @{@"token" : @"xxxxxxx"};
     NSString *name =@"test";
     __weak __typeof(&*self)weakSelf = self;
-    [signalrSwift signalROpenWithUrl:signalRString hubName:name blockfunc:^(NSString * _Nonnull message) {
+    [signalrSwift signalROpenWithUrl:signalRString headers:headers hubName:name blockfunc:^(NSString * _Nonnull message) {
         [weakSelf receivePushMessage:message];
     }];
+    
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [signalrSwift signalRClose];
